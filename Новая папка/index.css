@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  scroll-snap-align: start;
+  font-size: clamp(0.9rem, 2vw, 1.5rem);
+  margin: auto;
+  width: auto;
+  height: 10vh;
+  background-color: #0f1506;
+  
+  font-weight: 400;
+  font-style: normal;
+  
+  justify-content: center;
+  
+}
+
+.header-inside {
+ align-items: center;
+  display: flex;
+  justify-content: center;
+  width: clamp(300px, 50%, 700px);
+  
+  gap: clamp(1rem, 3vw, 3rem);
+  
+  
+  background-color: rgba(129, 69, 1, 0.7);
+  
+  color: wheat;
+  
+}
+
+a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.main-app-wrapper {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* для Internet Explorer и Edge */
+  scrollbar-width: none; /* для Firefox */
+}
+
+.welcome {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  position: relative;
+  text-align: center;
+  height: 90vh;
+}
+
+.welcome-item-background-1 {
+  background-color: #283224;
+  width: 100%;
+  grid-area: 1 / 1 / 11 / 13;
+  display: grid;
+   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.h1-wrapper {
+
+  position: relative;
+  grid-column: 3 / 9;
+  grid-row: 5;
+  font-size: clamp(1.4rem, 5vw, 3.5rem);
+  color: wheat;
+  
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.h2-wrapper {
+  grid-area: 7 / 6 / 7 / 9;
+  font-size: clamp(1rem, 3vw, 2rem);
+  color: wheat;
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+@media screen and (max-width: 576px) {
+  .h1-wrapper {
+    
+    grid-column: 2 / 12;
+    grid-row: 2 / 3;
+    
+  }
+
+  .h2-wrapper {
+    grid-column: 8 / 12;
+    grid-row: 4
+  }
+}
+
+
+.welcome-img-wrapper {
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  transform: translateY(-40%);
+  width: clamp(50px, 20%, 500px);
+  height: auto;
+  
+}
+
+
+.welcome-img-width-wrapper {
+  width: 100%;
+  height: 100%;
+  border: solid 5px #814501;
+}
+
+@media screen and (max-width: 576px) {
+  .welcome-img-wrapper {
+    width: min(300px, 60%);
+    height: min(700px, 50%);; /* Пусть подстраивается */
+    right: 50%;
+    transform: translate(50%, -40%);
+  }
+}
+
+
+
+.welcome-item-background-2 {
+  display: flex;
+      justify-content: center;
+      align-items: center;
+  background-color: #0f1506;
+  width: 100%;
+  grid-area: 11 / 1 / 13 / 13;
+}
+
+.star {
+  position: absolute;
+  width: clamp(10px, 2rem, 32px);
+  left: 10px;
+  aspect-ratio: 1;
+}
+
+.star2 {
+  width: clamp(10px, 1.5rem, 32px);
+
+  position: absolute;
+  left: 30px;
+  top: 54px;
+}
+
+.star3 {
+  position: absolute;
+  width: clamp(10px, 1rem, 32px);
+  
+}
+
+@media screen and (max-width: 576px) {
+  .star {
+    left: -24px;
+  }
+
+  .star2 {
+    top: 35px;
+    left: 7px
+  }
+
+  .star3 {
+    top: -10px;
+  }
+}
+
+
+.next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: clamp(50px, 5vw, 200px);
+  width: clamp(50px, 5vw, 200px);
+  
+  background-color: #814501;
+  font-size: clamp(1rem, 2vw, 2rem);
+  color: wheat;
+}
+
+
+
+.about-wrapper {
+  scroll-snap-align: start;
+  background-color: #0f1506;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 70% 15%;
+}
+
+.item-1 {
+    background-color: #0f1506;
+    width: 100%;
+}
+
+.item-2 {
+    background-color: #283224;
+    width: 100%;
+}
+
+
+span {
+  color: #814501;
+  
+}
+
+.M {
+  display: inline-block;
+  color:wheat
+}
+
+h1, h2, header {
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
