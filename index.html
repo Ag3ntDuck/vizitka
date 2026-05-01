@@ -26,12 +26,12 @@
           
 
           <h1 class="h1-wrapper">
-            <div class="oval-bg"></div>
+           
             My name is Duck and this is a
                page about me.
           </h1>
           <h2 class="h2-wrapper">
-            <div class="oval2-bg"></div>
+           
             Feel free to contact
           </h2>
         </div>
@@ -41,14 +41,14 @@
         </div>
       </div>
 
-      <div class="about-background" id="about">
+      <div class="background" id="about">
         
         
     <h1 class="about-title">
-      <div class="about-title-oval"></div>
+      
       Кто я есть и чем интересна</h1>
       <p class="about-p">
-        <div class="about-p-oval"></div>
+       
         Меня зовут Аня, я junior
          frontend разработчик. Если кратко мой стак: </p>
       
@@ -60,12 +60,78 @@
         <li>TypeScript</li>
         <li>Node.js</li>
         <li>Express</li>
-        <li>Firebase (realtime Database, Firestore, Hosting, Authentication)</li>
+        <li>Firebase (Database, Firestore, Hosting, Authentication)</li>
         <li>Puppeteer</li>
         <li>Git (merge, push, commit)</li>
         <li>Chrome Extensions API</li>
       </ul>
     </div>
+
+    <div class="background" id="about">
+      <h1 class="about-title">
+        А вот что я делала не кратко</h1>
+      <div class="about-more-p">
+        <div class="tg-bot">
+
+            <h2 class="tg-bot-h2">
+              Telegram-бот
+            </h2>
+
+            <p class="about-more-main">
+              Node.js, Express, Firebase RTDB, cron, pm2.
+            
+              Бот поддерживает добавление/удаление задач, 
+              гибкие напоминания (постоянные / один раз), 
+              инлайн-клавиатуры, хранение состояний пользователя.
+             
+              Самостоятельно настроила инфраструктуру для бота: 
+              <ul class="about-more-main tg-bot-ul">
+                <li>настроила VPS на ubuntu</li>
+                <li>настроила домен и SSL сертификат (Let's Encrypt)</li>
+                <li>Автозапуск и мониторинг через pm2</li>
+                <li>Сама работа вебхука настроена через Express</li>
+                <li>База данных на Firebase Firestore</li>
+                <li>А система напоминаний сделана через cron</li>
+              </ul> 
+
+              Ну и потыкать его можно тут: <a href="https://t.me/CatCarePetBot">@CatCarePetBot</a>
+              А код посмотреть тут:
+            </p>
+        </div>
+        <div class="tg-bot1">
+          <h2 class="tg-bot-h2">
+            Cистема бронирования подарков для друзей и семьи
+          </h2>
+          <p class="about-more-main">
+            Firebase Auth (email/Google), Firestore, TypeScript
+            Реализовала полноценную CRUD-систему: добавление, удаление, бронирование подарков.
+            Есть условная соцсеть, можно регистрироваться, менять пароль, добавлять подарки по разным категориям, в зависимости от желаемости.
+            Так же пользователь не видит подарки, которые забронировали у него, зато может видеть если 
+            у кого-то другого забронировали,
+             чтобы не было ситуаций двух одинаковых подарков.
+            <br>
+            А код можно посмотреть тут: <a href="https://github.com/Ag3ntDuck/presents-project"></a>
+          </p>
+          
+        
+        </div>
+        <div class="tg-bot2">
+          <h2>Ну и маленькие проекты</h2>
+          <p>Парсер интернет-магазина (Puppeteer). Парсер, собирающий данные о лубрикантах (названия, составы, коды) с розничного сайта.
+
+На выходе — структурированный JSON-файл.
+
+В планах: обработка JSON на своём сайте + отправка запросов нейросети для анализа ингредиентов.</p>
+<p>Chrome-расширение (Chrome Extensions API) для напоминания полива растений. Напоминалки работают через chrome.alarms (внутренний счётчик).
+
+Данные хранятся в localStorage.
+
+Уведомления показываются кастомным окошком внизу экрана. Можно добавлять растения, указывать им как часто нужно поливать, в зависиомти от даты нужного полива, полив будет гореть разными цветами.</p>
+        </div>
+      </div>
+    </div>
+
+
     <script type="module" src="main.js"></script>
   </body>
 </html>
